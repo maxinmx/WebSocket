@@ -1,0 +1,13 @@
+安装项目：npm install
+启动服务器：node server
+
+server中以下代码字段
+if (str !== '心跳值') {
+    brodcast(JSON.stringify(obj));
+} else {
+    brodcast(JSON.stringify(''));
+}
+应在socket-client中释放增加心跳检测代码释放时使用
+
+
+server中关闭服务器代码正常使用时不要放开，会影响功能使用
